@@ -82,3 +82,38 @@ curl -X POST \
     "operating_system": "ubuntu_18_04"
 }'
 ```
+
+reference documentation - https://metal.equinix.com/developers/docs/locations/facilities/#api-endpoints
+
+## Metal CLI example
+
+```bash
+metal device create \
+  --hostname metal-hostname \
+  --plan c3.small.x86 \
+  --facility am6 \
+  --operating-system ubuntu_18_04 \
+  --userdata-file "bootstrap/nginx.sh" \
+  --project-id "<PROJECT_ID>"
+```
+
+reference documentation - https://github.com/equinix/metal-cli/
+
+packngo - https://github.com/packethost/packngo
+
+## Terraform
+
+```bash
+terraform init 
+terraform apply
+```
+
+## Destroy infrastructure
+
+```
+terraform destroy
+```
+
+Reference documentation - https://metal.equinix.com/developers/api/
+
+DevOps - https://metal.equinix.com/developers/docs/libraries/devops/
