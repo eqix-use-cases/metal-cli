@@ -1,0 +1,9 @@
+env.sh
+metal.yaml
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform
+.vagrant
+*.lock.*
+*.pem
